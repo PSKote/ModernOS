@@ -1,0 +1,1123 @@
+Script started on Sunday 26 March 2017 10:06:07 AM IST
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ date
+Sun Mar 26 10:06:12 IST 2017
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ eccho [K[K[K[Kho author Prajwal
+author Prajwal
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhe llo.c
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ ./ovmhello 
+vt Proto_vt 0xe710b8 parent 0xe71158 (Object_vt) size 4 tally 4
+    0 key 0xe71338 (#lookup) value 0xe715e8
+    1 key 0xe71378 (#add_method) value 0xe71608
+    2 key 0xe713c8 (#allocate) value 0xe71138
+    3 key 0xe71458 (#delegate) value 0xe71118
+obj Proto 0xe71628 vt Proto_vt 0xe710b8
+vt Object_vt 0xe71158 parent (nil) ((nil)_vt) size 2 tally 0
+obj Object 0xe71648 vt Object_vt 0xe71158
+vt Symbol_vt 0xe711f8 parent 0xe71158 (Object_vt) size 4 tally 3
+    0 key 0xe71488 (#new:) value 0xe71a98
+    1 key 0xe71568 (#print) value 0xe71ab8
+    2 key 0xe715a8 (#length) value 0xe71278
+obj Symbol 0xe71668 vt Symbol_vt 0xe711f8
+Object Machine ready
+Testing String
+Object Machine v1.0
+hello length 5
+hello world
+Testing Array
+array elements 4
+hello world
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ ./ovmhello gcc -g -o ovmhello ovmhelllo.c
+[01m[Kovmhello.c:[m[K In function ‘[01m[KString_append[m[K’:
+[01m[Kovmhello.c:39:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kchars[m[K’ undeclared (first use in this function)
+   chars[i] = self->chars[i];
+[01;32m[K   ^[m[K
+[01m[Kovmhello.c:39:3:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kovmhello.c:40:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kargs[m[K’ undeclared (first use in this function)
+  for (j = 0; j < args->length; j++)
+[01;32m[K                  ^[m[K
+In file included from [01m[Kovmhello.c:1:0[m[K:
+[01m[Kovmhello.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kovmhello.c:104:34:[m[K [01;31m[Kerror: [m[K‘[01m[Ks_concat[m[K’ undeclared (first use in this function)
+  send(String_vt, s_vtadd_method, s_concat, (method_t)String_append); 
+[01;32m[K                                  ^[m[K
+[01m[Kovm.c:200:29:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Ksend[m[K’
+       c ? c->method(c, r, ##__VA_ARGS__) : 0; \
+[01;32m[K                             ^[m[K
+[01m[Kovmhello.c:121:10:[m[K [01;31m[Kerror: [m[K‘[01m[Ks_append[m[K’ undeclared (first use in this function)
+  send(h, s_append, w);
+[01;32m[K          ^[m[K
+[01m[Kovm.c:199:39:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Ksend[m[K’
+       struct closure *c = vt_bind(r, (selector)); \
+[01;32m[K                                       ^[m[K
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c
+[01m[Kovmhello.c:[m[K In function ‘[01m[KString_append[m[K’:
+[01m[Kovmhello.c:39:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kchars[m[K’ undeclared (first use in this function)
+   chars[i] = self->chars[i];
+[01;32m[K   ^[m[K
+[01m[Kovmhello.c:39:3:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kovmhello.c:40:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kargs[m[K’ undeclared (first use in this function)
+  for (j = 0; j < args->length; j++)
+[01;32m[K                  ^[m[K
+In file included from [01m[Kovmhello.c:1:0[m[K:
+[01m[Kovmhello.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kovmhello.c:104:34:[m[K [01;31m[Kerror: [m[K‘[01m[Ks_append[m[K’ undeclared (first use in this function)
+  send(String_vt, s_vtadd_method, s_append, (method_t)String_append); 
+[01;32m[K                                  ^[m[K
+[01m[Kovm.c:200:29:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Ksend[m[K’
+       c ? c->method(c, r, ##__VA_ARGS__) : 0; \
+[01;32m[K                             ^[m[K
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c
+In file included from [01m[Kovmhello.c:1:0[m[K:
+[01m[Kovm.c:[m[K In function ‘[01m[Kinit_ovm[m[K’:
+[01m[Kovm.c:106:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct root[m[K’ has no member named ‘[01m[Kappend[m[K’
+ #define s_append Roots.append
+[01;32m[K                       ^[m[K
+[01m[Kovm.c:348:2:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Ks_append[m[K’
+  s_append       = atom("append");
+[01;32m[K  ^[m[K
+[01m[Kovmhello.c:[m[K In function ‘[01m[KString_append[m[K’:
+[01m[Kovmhello.c:39:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kchars[m[K’ undeclared (first use in this function)
+   chars[i] = self->chars[i];
+[01;32m[K   ^[m[K
+[01m[Kovmhello.c:39:3:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kovmhello.c:40:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kargs[m[K’ undeclared (first use in this function)
+  for (j = 0; j < args->length; j++)
+[01;32m[K                  ^[m[K
+In file included from [01m[Kovmhello.c:1:0[m[K:
+[01m[Kovmhello.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kovm.c:106:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct root[m[K’ has no member named ‘[01m[Kappend[m[K’
+ #define s_append Roots.append
+[01;32m[K                       ^[m[K
+[01m[Kovm.c:202:29:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Ks_append[m[K’
+       c ? c->method(c, r, ##__VA_ARGS__) : 0; \
+[01;32m[K                             ^[m[K
+[01m[Kovmhello.c:104:2:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Ksend[m[K’
+  send(String_vt, s_vtadd_method, s_append, (method_t)String_append); 
+[01;32m[K  ^[m[K
+[01m[Kovm.c:106:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct root[m[K’ has no member named ‘[01m[Kappend[m[K’
+ #define s_append Roots.append
+[01;32m[K                       ^[m[K
+[01m[Kovm.c:201:39:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Ksend[m[K’
+       struct closure *c = vt_bind(r, (selector)); \
+[01;32m[K                                       ^[m[K
+[01m[Kovmhello.c:121:10:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Ks_append[m[K’
+  send(h, s_append, w);
+[01;32m[K          ^[m[K
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c
+[01m[Kovmhello.c:[m[K In function ‘[01m[KString_append[m[K’:
+[01m[Kovmhello.c:39:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kchars[m[K’ undeclared (first use in this function)
+   chars[i] = self->chars[i];
+[01;32m[K   ^[m[K
+[01m[Kovmhello.c:39:3:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kovmhello.c:40:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kargs[m[K’ undeclared (first use in this function)
+  for (j = 0; j < args->length; j++)
+[01;32m[K                  ^[m[K
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c
+[01m[Kovmhello.c:[m[K In function ‘[01m[KString_append[m[K’:
+[01m[Kovmhello.c:40:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kargs[m[K’ undeclared (first use in this function)
+  for (j = 0; j < args->length; j++)
+[01;32m[K                  ^[m[K
+[01m[Kovmhello.c:40:18:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ ./ovmhello 
+vt Proto_vt 0x1d6c0b8 parent 0x1d6c158 (Object_vt) size 4 tally 4
+    0 key 0x1d6c338 (#lookup) value 0x1d6c628
+    1 key 0x1d6c378 (#add_method) value 0x1d6c648
+    2 key 0x1d6c3c8 (#allocate) value 0x1d6c138
+    3 key 0x1d6c458 (#delegate) value 0x1d6c118
+obj Proto 0x1d6c668 vt Proto_vt 0x1d6c0b8
+vt Object_vt 0x1d6c158 parent (nil) ((nil)_vt) size 2 tally 0
+obj Object 0x1d6c688 vt Object_vt 0x1d6c158
+vt Symbol_vt 0x1d6c1f8 parent 0x1d6c158 (Object_vt) size 4 tally 3
+    0 key 0x1d6c488 (#new:) value 0x1d6cad8
+    1 key 0x1d6c568 (#print) value 0x1d6caf8
+    2 key 0x1d6c5a8 (#length) value 0x1d6c278
+obj Symbol 0x1d6c6a8 vt Symbol_vt 0x1d6c1f8
+Object Machine ready
+Testing String
+Object Machine v1.0
+hello length 5
+hello world
+****************
+hello****************
+Testing Array
+array elements 4
+hello world
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ ./ovmhello 
+vt Proto_vt 0xe650b8 parent 0xe65158 (Object_vt) size 4 tally 4
+    0 key 0xe65338 (#lookup) value 0xe65628
+    1 key 0xe65378 (#add_method) value 0xe65648
+    2 key 0xe653c8 (#allocate) value 0xe65138
+    3 key 0xe65458 (#delegate) value 0xe65118
+obj Proto 0xe65668 vt Proto_vt 0xe650b8
+vt Object_vt 0xe65158 parent (nil) ((nil)_vt) size 2 tally 0
+obj Object 0xe65688 vt Object_vt 0xe65158
+vt Symbol_vt 0xe651f8 parent 0xe65158 (Object_vt) size 4 tally 3
+    0 key 0xe65488 (#new:) value 0xe65ad8
+    1 key 0xe65568 (#print) value 0xe65af8
+    2 key 0xe655a8 (#length) value 0xe65278
+obj Symbol 0xe656a8 vt Symbol_vt 0xe651f8
+Object Machine ready
+Testing String
+Object Machine v1.0
+hello length 5
+hello world
+****************
+hello****************
+Testing Array
+array elements 4
+hello world
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ ./ovmhello 
+vt Proto_vt 0xd600b8 parent 0xd60158 (Object_vt) size 4 tally 4
+    0 key 0xd60338 (#lookup) value 0xd60628
+    1 key 0xd60378 (#add_method) value 0xd60648
+    2 key 0xd603c8 (#allocate) value 0xd60138
+    3 key 0xd60458 (#delegate) value 0xd60118
+obj Proto 0xd60668 vt Proto_vt 0xd600b8
+vt Object_vt 0xd60158 parent (nil) ((nil)_vt) size 2 tally 0
+obj Object 0xd60688 vt Object_vt 0xd60158
+vt Symbol_vt 0xd601f8 parent 0xd60158 (Object_vt) size 4 tally 3
+    0 key 0xd60488 (#new:) value 0xd60ad8
+    1 key 0xd60568 (#print) value 0xd60af8
+    2 key 0xd605a8 (#length) value 0xd60278
+obj Symbol 0xd606a8 vt Symbol_vt 0xd601f8
+Object Machine ready
+Testing String
+Object Machine v1.0
+hello length 5
+hello world
+****************
+hello****************
+Testing Array
+array elements 4
+hello world
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ ./ovmhello 
+vt Proto_vt 0x1a200b8 parent 0x1a20158 (Object_vt) size 4 tally 4
+    0 key 0x1a20338 (#lookup) value 0x1a20628
+    1 key 0x1a20378 (#add_method) value 0x1a20648
+    2 key 0x1a203c8 (#allocate) value 0x1a20138
+    3 key 0x1a20458 (#delegate) value 0x1a20118
+obj Proto 0x1a20668 vt Proto_vt 0x1a200b8
+vt Object_vt 0x1a20158 parent (nil) ((nil)_vt) size 2 tally 0
+obj Object 0x1a20688 vt Object_vt 0x1a20158
+vt Symbol_vt 0x1a201f8 parent 0x1a20158 (Object_vt) size 4 tally 3
+    0 key 0x1a20488 (#new:) value 0x1a20ad8
+    1 key 0x1a20568 (#print) value 0x1a20af8
+    2 key 0x1a205a8 (#length) value 0x1a20278
+obj Symbol 0x1a206a8 vt Symbol_vt 0x1a201f8
+Object Machine ready
+Testing String
+Object Machine v1.0
+hello length 5
+hello world
+****************
+hello****************
+Testing Array
+array elements 4
+hello world
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ ./ovmhello gcc -g -o ovmhello ovmhelllo.c
+In file included from [01m[Kovmhello.c:1:0[m[K:
+[01m[Kovmhello.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kovmhello.c:104:34:[m[K [01;31m[Kerror: [m[K‘[01m[Ks_append[m[K’ undeclared (first use in this function)
+  send(String_vt, s_vtadd_method, s_append, (method_t)String_append); 
+[01;32m[K                                  ^[m[K
+[01m[Kovm.c:200:29:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Ksend[m[K’
+       c ? c->method(c, r, ##__VA_ARGS__) : 0; \
+[01;32m[K                             ^[m[K
+[01m[Kovmhello.c:104:34:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+  send(String_vt, s_vtadd_method, s_append, (method_t)String_append); 
+[01;32m[K                                  ^[m[K
+[01m[Kovm.c:200:29:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Ksend[m[K’
+       c ? c->method(c, r, ##__VA_ARGS__) : 0; \
+[01;32m[K                             ^[m[K
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c
+In file included from [01m[Kovmhello.c:1:0[m[K:
+[01m[Kovmhello.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kovmhello.c:104:34:[m[K [01;31m[Kerror: [m[K‘[01m[Ks_append[m[K’ undeclared (first use in this function)
+  send(String_vt, s_vtadd_method, s_append, (method_t)String_append); 
+[01;32m[K                                  ^[m[K
+[01m[Kovm.c:203:29:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Ksend[m[K’
+       c ? c->method(c, r, ##__VA_ARGS__) : 0; \
+[01;32m[K                             ^[m[K
+[01m[Kovmhello.c:104:34:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+  send(String_vt, s_vtadd_method, s_append, (method_t)String_append); 
+[01;32m[K                                  ^[m[K
+[01m[Kovm.c:203:29:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Ksend[m[K’
+       c ? c->method(c, r, ##__VA_ARGS__) : 0; \
+[01;32m[K                             ^[m[K
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c[A]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [13P./ovmhello 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -g -o ovmhello ovmhelllo.c
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c[A]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [13P./ovmhello 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+vt Proto_vt 0xf990b8 parent 0xf99158 (Object_vt) size 4 tally 4
+    0 key 0xf99338 (#lookup) value 0xf99628
+    1 key 0xf99378 (#add_method) value 0xf99648
+    2 key 0xf993c8 (#allocate) value 0xf99138
+    3 key 0xf99458 (#delegate) value 0xf99118
+obj Proto 0xf99668 vt Proto_vt 0xf990b8
+vt Object_vt 0xf99158 parent (nil) ((nil)_vt) size 2 tally 0
+obj Object 0xf99688 vt Object_vt 0xf99158
+vt Symbol_vt 0xf991f8 parent 0xf99158 (Object_vt) size 4 tally 3
+    0 key 0xf99488 (#new:) value 0xf99ad8
+    1 key 0xf99568 (#print) value 0xf99af8
+    2 key 0xf995a8 (#length) value 0xf99278
+obj Symbol 0xf996a8 vt Symbol_vt 0xf991f8
+Object Machine ready
+Testing String
+Object Machine v1.0
+hello length 5
+hello world
+****************
+hello
+****************
+Testing Array
+array elements 4
+hello world
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ ./ovmhello 
+vt Proto_vt 0xed10b8 parent 0xed1158 (Object_vt) size 4 tally 4
+    0 key 0xed1338 (#lookup) value 0xed1628
+    1 key 0xed1378 (#add_method) value 0xed1648
+    2 key 0xed13c8 (#allocate) value 0xed1138
+    3 key 0xed1458 (#delegate) value 0xed1118
+obj Proto 0xed1668 vt Proto_vt 0xed10b8
+vt Object_vt 0xed1158 parent (nil) ((nil)_vt) size 2 tally 0
+obj Object 0xed1688 vt Object_vt 0xed1158
+vt Symbol_vt 0xed11f8 parent 0xed1158 (Object_vt) size 4 tally 3
+    0 key 0xed1488 (#new:) value 0xed1ad8
+    1 key 0xed1568 (#print) value 0xed1af8
+    2 key 0xed15a8 (#length) value 0xed1278
+obj Symbol 0xed16a8 vt Symbol_vt 0xed11f8
+Object Machine ready
+Testing String
+Object Machine v1.0
+hello length 5
+hello world
+****************
+hello
+****************
+Testing Array
+array elements 4
+hello world
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ ./ovmhello gcc -g -o ovmhello ovmhelllo.c
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c[A]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [13P./ovmhello 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+vt Proto_vt 0x22c30b8 parent 0x22c3158 (Object_vt) size 4 tally 4
+    0 key 0x22c3338 (#lookup) value 0x22c3628
+    1 key 0x22c3378 (#add_method) value 0x22c3648
+    2 key 0x22c33c8 (#allocate) value 0x22c3138
+    3 key 0x22c3458 (#delegate) value 0x22c3118
+obj Proto 0x22c3668 vt Proto_vt 0x22c30b8
+vt Object_vt 0x22c3158 parent (nil) ((nil)_vt) size 2 tally 0
+obj Object 0x22c3688 vt Object_vt 0x22c3158
+vt Symbol_vt 0x22c31f8 parent 0x22c3158 (Object_vt) size 4 tally 3
+    0 key 0x22c3488 (#new:) value 0x22c3ad8
+    1 key 0x22c3568 (#print) value 0x22c3af8
+    2 key 0x22c35a8 (#length) value 0x22c3278
+obj Symbol 0x22c36a8 vt Symbol_vt 0x22c31f8
+Object Machine ready
+Testing String
+Object Machine v1.0
+hello length 5
+hello world
+****************
+
+****************
+Testing Array
+array elements 4
+hello world
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ ./ovmhello gcc -g -o ovmhello ovmhelllo.c
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c[A]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [13P./ovmhello 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+vt Proto_vt 0x10ee0b8 parent 0x10ee158 (Object_vt) size 4 tally 4
+    0 key 0x10ee338 (#lookup) value 0x10ee628
+    1 key 0x10ee378 (#add_method) value 0x10ee648
+    2 key 0x10ee3c8 (#allocate) value 0x10ee138
+    3 key 0x10ee458 (#delegate) value 0x10ee118
+obj Proto 0x10ee668 vt Proto_vt 0x10ee0b8
+vt Object_vt 0x10ee158 parent (nil) ((nil)_vt) size 2 tally 0
+obj Object 0x10ee688 vt Object_vt 0x10ee158
+vt Symbol_vt 0x10ee1f8 parent 0x10ee158 (Object_vt) size 4 tally 3
+    0 key 0x10ee488 (#new:) value 0x10eead8
+    1 key 0x10ee568 (#print) value 0x10eeaf8
+    2 key 0x10ee5a8 (#length) value 0x10ee278
+obj Symbol 0x10ee6a8 vt Symbol_vt 0x10ee1f8
+Object Machine ready
+Testing String
+Object Machine v1.0
+hello length 5
+hello world
+****************
+helld
+****************
+Testing Array
+array elements 4
+helld world
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ ./ovmhello gcc -g -o ovmhello ovmhelllo.c
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c[A]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [13P./ovmhello 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+vt Proto_vt 0x1f820b8 parent 0x1f82158 (Object_vt) size 4 tally 4
+    0 key 0x1f82338 (#lookup) value 0x1f82628
+    1 key 0x1f82378 (#add_method) value 0x1f82648
+    2 key 0x1f823c8 (#allocate) value 0x1f82138
+    3 key 0x1f82458 (#delegate) value 0x1f82118
+obj Proto 0x1f82668 vt Proto_vt 0x1f820b8
+vt Object_vt 0x1f82158 parent (nil) ((nil)_vt) size 2 tally 0
+obj Object 0x1f82688 vt Object_vt 0x1f82158
+vt Symbol_vt 0x1f821f8 parent 0x1f82158 (Object_vt) size 4 tally 3
+    0 key 0x1f82488 (#new:) value 0x1f82ad8
+    1 key 0x1f82568 (#print) value 0x1f82af8
+    2 key 0x1f825a8 (#length) value 0x1f82278
+obj Symbol 0x1f826a8 vt Symbol_vt 0x1f821f8
+Object Machine ready
+Testing String
+Object Machine v1.0
+hello length 5
+hello world
+****************
+hellw
+****************
+Testing Array
+array elements 4
+hellw world
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ ./ovmhello gcc -g -o ovmhello ovmhelllo.c
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c[A]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [13P./ovmhello 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+vt Proto_vt 0x107b0b8 parent 0x107b158 (Object_vt) size 4 tally 4
+    0 key 0x107b338 (#lookup) value 0x107b628
+    1 key 0x107b378 (#add_method) value 0x107b648
+    2 key 0x107b3c8 (#allocate) value 0x107b138
+    3 key 0x107b458 (#delegate) value 0x107b118
+obj Proto 0x107b668 vt Proto_vt 0x107b0b8
+vt Object_vt 0x107b158 parent (nil) ((nil)_vt) size 2 tally 0
+obj Object 0x107b688 vt Object_vt 0x107b158
+vt Symbol_vt 0x107b1f8 parent 0x107b158 (Object_vt) size 4 tally 3
+    0 key 0x107b488 (#new:) value 0x107bad8
+    1 key 0x107b568 (#print) value 0x107baf8
+    2 key 0x107b5a8 (#length) value 0x107b278
+obj Symbol 0x107b6a8 vt Symbol_vt 0x107b1f8
+Object Machine ready
+Testing String
+Object Machine v1.0
+hello length 5
+hello world
+****************
+hello
+****************
+Testing Array
+array elements 4
+hello world
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ ./ovmhello gcc -g -o ovmhello ovmhelllo.c
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c[A]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [13P./ovmhello 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+vt Proto_vt 0x25e80b8 parent 0x25e8158 (Object_vt) size 4 tally 4
+    0 key 0x25e8338 (#lookup) value 0x25e8628
+    1 key 0x25e8378 (#add_method) value 0x25e8648
+    2 key 0x25e83c8 (#allocate) value 0x25e8138
+    3 key 0x25e8458 (#delegate) value 0x25e8118
+obj Proto 0x25e8668 vt Proto_vt 0x25e80b8
+vt Object_vt 0x25e8158 parent (nil) ((nil)_vt) size 2 tally 0
+obj Object 0x25e8688 vt Object_vt 0x25e8158
+vt Symbol_vt 0x25e81f8 parent 0x25e8158 (Object_vt) size 4 tally 3
+    0 key 0x25e8488 (#new:) value 0x25e8ad8
+    1 key 0x25e8568 (#print) value 0x25e8af8
+    2 key 0x25e85a8 (#length) value 0x25e8278
+obj Symbol 0x25e86a8 vt Symbol_vt 0x25e81f8
+Object Machine ready
+Testing String
+Object Machine v1.0
+hello length 5
+hello world
+****************
+hellw
+****************
+Testing Array
+array elements 4
+hellw world
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ ./ovmhello gcc -g -o ovmhello ovmhelllo.c
+[01m[Kovmhello.c:[m[K In function ‘[01m[KString_append[m[K’:
+[01m[Kovmhello.c:50:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kreturn[m[K’
+  return (struct object * )self;
+[01;32m[K  ^[m[K
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c[H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c[A]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [13P./ovmhello 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+vt Proto_vt 0x21e10b8 parent 0x21e1158 (Object_vt) size 4 tally 4
+    0 key 0x21e1338 (#lookup) value 0x21e1628
+    1 key 0x21e1378 (#add_method) value 0x21e1648
+    2 key 0x21e13c8 (#allocate) value 0x21e1138
+    3 key 0x21e1458 (#delegate) value 0x21e1118
+obj Proto 0x21e1668 vt Proto_vt 0x21e10b8
+vt Object_vt 0x21e1158 parent (nil) ((nil)_vt) size 2 tally 0
+obj Object 0x21e1688 vt Object_vt 0x21e1158
+vt Symbol_vt 0x21e11f8 parent 0x21e1158 (Object_vt) size 4 tally 3
+    0 key 0x21e1488 (#new:) value 0x21e1ad8
+    1 key 0x21e1568 (#print) value 0x21e1af8
+    2 key 0x21e15a8 (#length) value 0x21e1278
+obj Symbol 0x21e16a8 vt Symbol_vt 0x21e11f8
+Object Machine ready
+Testing String
+Object Machine v1.0
+hello length 5
+hello world
+****************
+hello
+****************
+Testing Array
+array elements 4
+hello world
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ ./ovmhello gcc -g -o ovmhello ovmhelllo.c
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c[A]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [13P./ovmhello 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+vt Proto_vt 0x1bd40b8 parent 0x1bd4158 (Object_vt) size 4 tally 4
+    0 key 0x1bd4338 (#lookup) value 0x1bd4628
+    1 key 0x1bd4378 (#add_method) value 0x1bd4648
+    2 key 0x1bd43c8 (#allocate) value 0x1bd4138
+    3 key 0x1bd4458 (#delegate) value 0x1bd4118
+obj Proto 0x1bd4668 vt Proto_vt 0x1bd40b8
+vt Object_vt 0x1bd4158 parent (nil) ((nil)_vt) size 2 tally 0
+obj Object 0x1bd4688 vt Object_vt 0x1bd4158
+vt Symbol_vt 0x1bd41f8 parent 0x1bd4158 (Object_vt) size 4 tally 3
+    0 key 0x1bd4488 (#new:) value 0x1bd4ad8
+    1 key 0x1bd4568 (#print) value 0x1bd4af8
+    2 key 0x1bd45a8 (#length) value 0x1bd4278
+obj Symbol 0x1bd46a8 vt Symbol_vt 0x1bd41f8
+Object Machine ready
+Testing String
+Object Machine v1.0
+hello length 5
+hello world
+****************
+hellw
+****************
+Testing Array
+array elements 4
+hellw world
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ ./ovmhello gcc -g -o ovmhello ovmhelllo.c
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c[A]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [13P./ovmhello 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+vt Proto_vt 0x15b80b8 parent 0x15b8158 (Object_vt) size 4 tally 4
+    0 key 0x15b8338 (#lookup) value 0x15b8628
+    1 key 0x15b8378 (#add_method) value 0x15b8648
+    2 key 0x15b83c8 (#allocate) value 0x15b8138
+    3 key 0x15b8458 (#delegate) value 0x15b8118
+obj Proto 0x15b8668 vt Proto_vt 0x15b80b8
+vt Object_vt 0x15b8158 parent (nil) ((nil)_vt) size 2 tally 0
+obj Object 0x15b8688 vt Object_vt 0x15b8158
+vt Symbol_vt 0x15b81f8 parent 0x15b8158 (Object_vt) size 4 tally 3
+    0 key 0x15b8488 (#new:) value 0x15b8ad8
+    1 key 0x15b8568 (#print) value 0x15b8af8
+    2 key 0x15b85a8 (#length) value 0x15b8278
+obj Symbol 0x15b86a8 vt Symbol_vt 0x15b81f8
+Object Machine ready
+Testing String
+Object Machine v1.0
+hello length 5
+hello world
+_________i=5****************
+hello
+****************
+Testing Array
+array elements 4
+hello world
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ ./ovmhello gcc -g -o ovmhello ovmhelllo.c
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c[A]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [13P./ovmhello 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+vt Proto_vt 0x126a0b8 parent 0x126a158 (Object_vt) size 4 tally 4
+    0 key 0x126a338 (#lookup) value 0x126a628
+    1 key 0x126a378 (#add_method) value 0x126a648
+    2 key 0x126a3c8 (#allocate) value 0x126a138
+    3 key 0x126a458 (#delegate) value 0x126a118
+obj Proto 0x126a668 vt Proto_vt 0x126a0b8
+vt Object_vt 0x126a158 parent (nil) ((nil)_vt) size 2 tally 0
+obj Object 0x126a688 vt Object_vt 0x126a158
+vt Symbol_vt 0x126a1f8 parent 0x126a158 (Object_vt) size 4 tally 3
+    0 key 0x126a488 (#new:) value 0x126aad8
+    1 key 0x126a568 (#print) value 0x126aaf8
+    2 key 0x126a5a8 (#length) value 0x126a278
+obj Symbol 0x126a6a8 vt Symbol_vt 0x126a1f8
+Object Machine ready
+Testing String
+Object Machine v1.0
+hello length 5
+hello world
+_________i=5****************
+hello
+****************
+Testing Array
+array elements 4
+hello world
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ ./ovmhello gcc -g -o ovmhello ovmhelllo.c
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c[A]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [13P./ovmhello 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+vt Proto_vt 0xc4f0b8 parent 0xc4f158 (Object_vt) size 4 tally 4
+    0 key 0xc4f338 (#lookup) value 0xc4f628
+    1 key 0xc4f378 (#add_method) value 0xc4f648
+    2 key 0xc4f3c8 (#allocate) value 0xc4f138
+    3 key 0xc4f458 (#delegate) value 0xc4f118
+obj Proto 0xc4f668 vt Proto_vt 0xc4f0b8
+vt Object_vt 0xc4f158 parent (nil) ((nil)_vt) size 2 tally 0
+obj Object 0xc4f688 vt Object_vt 0xc4f158
+vt Symbol_vt 0xc4f1f8 parent 0xc4f158 (Object_vt) size 4 tally 3
+    0 key 0xc4f488 (#new:) value 0xc4fad8
+    1 key 0xc4f568 (#print) value 0xc4faf8
+    2 key 0xc4f5a8 (#length) value 0xc4f278
+obj Symbol 0xc4f6a8 vt Symbol_vt 0xc4f1f8
+Object Machine ready
+Testing String
+Object Machine v1.0
+hello length 5
+hello world
+_________i=6****************
+hello
+****************
+Testing Array
+array elements 4
+hello world
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ ./ovmhello gcc -g -o ovmhello ovmhelllo.c
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c[A]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [13P./ovmhello 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+vt Proto_vt 0x10780b8 parent 0x1078158 (Object_vt) size 4 tally 4
+    0 key 0x1078338 (#lookup) value 0x1078628
+    1 key 0x1078378 (#add_method) value 0x1078648
+    2 key 0x10783c8 (#allocate) value 0x1078138
+    3 key 0x1078458 (#delegate) value 0x1078118
+obj Proto 0x1078668 vt Proto_vt 0x10780b8
+vt Object_vt 0x1078158 parent (nil) ((nil)_vt) size 2 tally 0
+obj Object 0x1078688 vt Object_vt 0x1078158
+vt Symbol_vt 0x10781f8 parent 0x1078158 (Object_vt) size 4 tally 3
+    0 key 0x1078488 (#new:) value 0x1078ad8
+    1 key 0x1078568 (#print) value 0x1078af8
+    2 key 0x10785a8 (#length) value 0x1078278
+obj Symbol 0x10786a8 vt Symbol_vt 0x10781f8
+Object Machine ready
+Testing String
+Object Machine v1.0
+hello length 5
+hello world
+Copying
+Copying
+Copying
+Copying
+Copying
+****************
+hello
+****************
+Testing Array
+array elements 4
+hello world
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ ./ovmhello gcc -g -o ovmhello ovmhelllo.c
+[01m[Kovmhello.c:[m[K In function ‘[01m[KString_append[m[K’:
+[01m[Kovmhello.c:38:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct object[m[K’ has no member named ‘[01m[Klength[m[K’
+  for (i = 0; i < self->length; i++)
+[01;32m[K                      ^[m[K
+[01m[Kovmhello.c:39:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct object[m[K’ has no member named ‘[01m[Kchars[m[K’
+   self->chars[i] = self->chars[i];
+[01;32m[K       ^[m[K
+[01m[Kovmhello.c:39:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct object[m[K’ has no member named ‘[01m[Kchars[m[K’
+   self->chars[i] = self->chars[i];
+[01;32m[K                        ^[m[K
+[01m[Kovmhello.c:45:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct object[m[K’ has no member named ‘[01m[Kchars[m[K’
+   self->chars[i] = arg->chars[j];
+[01;32m[K       ^[m[K
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c[A]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [13P./ovmhello 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+vt Proto_vt 0x23e70b8 parent 0x23e7158 (Object_vt) size 4 tally 4
+    0 key 0x23e7338 (#lookup) value 0x23e7628
+    1 key 0x23e7378 (#add_method) value 0x23e7648
+    2 key 0x23e73c8 (#allocate) value 0x23e7138
+    3 key 0x23e7458 (#delegate) value 0x23e7118
+obj Proto 0x23e7668 vt Proto_vt 0x23e70b8
+vt Object_vt 0x23e7158 parent (nil) ((nil)_vt) size 2 tally 0
+obj Object 0x23e7688 vt Object_vt 0x23e7158
+vt Symbol_vt 0x23e71f8 parent 0x23e7158 (Object_vt) size 4 tally 3
+    0 key 0x23e7488 (#new:) value 0x23e7ad8
+    1 key 0x23e7568 (#print) value 0x23e7af8
+    2 key 0x23e75a8 (#length) value 0x23e7278
+obj Symbol 0x23e76a8 vt Symbol_vt 0x23e71f8
+Object Machine ready
+Testing String
+Object Machine v1.0
+hello length 5
+hello world
+****************
+hello
+****************
+Testing Array
+array elements 4
+hello world
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ ./ovmhello gcc -g -o ovmhello ovmhelllo.c
+[01m[Kovmhello.c:34:60:[m[K [01;31m[Kerror: [m[Kexpected declaration specifiers or ‘[01m[K...[m[K’ before ‘[01m[K([m[K’ token
+ static struct object * String_append(struct closure * cls, (struct object * )se
+[01;32m[K                                                            ^[m[K
+In file included from [01m[Kovmhello.c:1:0[m[K:
+[01m[Kovmhello.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kovmhello.c:109:54:[m[K [01;31m[Kerror: [m[K‘[01m[KString_append[m[K’ undeclared (first use in this function)
+  send(String_vt, s_vtadd_method, s_append, (method_t)String_append); 
+[01;32m[K                                                      ^[m[K
+[01m[Kovm.c:203:29:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Ksend[m[K’
+       c ? c->method(c, r, ##__VA_ARGS__) : 0; \
+[01;32m[K                             ^[m[K
+[01m[Kovmhello.c:109:54:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+  send(String_vt, s_vtadd_method, s_append, (method_t)String_append); 
+[01;32m[K                                                      ^[m[K
+[01m[Kovm.c:203:29:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Ksend[m[K’
+       c ? c->method(c, r, ##__VA_ARGS__) : 0; \
+[01;32m[K                             ^[m[K
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c
+[01m[Kovmhello.c:[m[K In function ‘[01m[KString_append[m[K’:
+[01m[Kovmhello.c:38:22:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Klength[m[K’ in something not a structure or union
+  for (i = 0; i < self->length; i++)
+[01;32m[K                      ^[m[K
+[01m[Kovmhello.c:39:7:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kchars[m[K’ in something not a structure or union
+   self->chars[i] = self->chars[i];
+[01;32m[K       ^[m[K
+[01m[Kovmhello.c:39:24:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kchars[m[K’ in something not a structure or union
+   self->chars[i] = self->chars[i];
+[01;32m[K                        ^[m[K
+[01m[Kovmhello.c:44:7:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kchars[m[K’ in something not a structure or union
+   self->chars[i] = arg->chars[j];
+[01;32m[K       ^[m[K
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c
+[01m[Kovmhello.c:[m[K In function ‘[01m[KString_append[m[K’:
+[01m[Kovmhello.c:45:3:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kprint[m[K’ [-Wimplicit-function-declaration]
+   print("Copying %c\n", self->chars[i]);
+[01;32m[K   ^[m[K
+/tmp/cc4MOcga.o: In function `String_append':
+/home/prajwal/MySEM2/MOS/Assignment2/ovmhello.c:45: undefined reference to `print'
+collect2: error: ld returned 1 exit status
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c[A]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [13P./ovmhello 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+vt Proto_vt 0xb4b0b8 parent 0xb4b158 (Object_vt) size 4 tally 4
+    0 key 0xb4b338 (#lookup) value 0xb4b628
+    1 key 0xb4b378 (#add_method) value 0xb4b648
+    2 key 0xb4b3c8 (#allocate) value 0xb4b138
+    3 key 0xb4b458 (#delegate) value 0xb4b118
+obj Proto 0xb4b668 vt Proto_vt 0xb4b0b8
+vt Object_vt 0xb4b158 parent (nil) ((nil)_vt) size 2 tally 0
+obj Object 0xb4b688 vt Object_vt 0xb4b158
+vt Symbol_vt 0xb4b1f8 parent 0xb4b158 (Object_vt) size 4 tally 3
+    0 key 0xb4b488 (#new:) value 0xb4bad8
+    1 key 0xb4b568 (#print) value 0xb4baf8
+    2 key 0xb4b5a8 (#length) value 0xb4b278
+obj Symbol 0xb4b6a8 vt Symbol_vt 0xb4b1f8
+Object Machine ready
+Testing String
+Object Machine v1.0
+hello length 5
+hello world
+Copying w
+Copying o
+Copying r
+Copying l
+Copying d
+****************
+hello
+****************
+Testing Array
+array elements 4
+hello world
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ ./ovmhello gcc -g -o ovmhello ovmhelllo.c
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c[A]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [13P./ovmhello 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+vt Proto_vt 0x6f70b8 parent 0x6f7158 (Object_vt) size 4 tally 4
+    0 key 0x6f7338 (#lookup) value 0x6f7628
+    1 key 0x6f7378 (#add_method) value 0x6f7648
+    2 key 0x6f73c8 (#allocate) value 0x6f7138
+    3 key 0x6f7458 (#delegate) value 0x6f7118
+obj Proto 0x6f7668 vt Proto_vt 0x6f70b8
+vt Object_vt 0x6f7158 parent (nil) ((nil)_vt) size 2 tally 0
+obj Object 0x6f7688 vt Object_vt 0x6f7158
+vt Symbol_vt 0x6f71f8 parent 0x6f7158 (Object_vt) size 4 tally 3
+    0 key 0x6f7488 (#new:) value 0x6f7ad8
+    1 key 0x6f7568 (#print) value 0x6f7af8
+    2 key 0x6f75a8 (#length) value 0x6f7278
+obj Symbol 0x6f76a8 vt Symbol_vt 0x6f71f8
+Object Machine ready
+Testing String
+Object Machine v1.0
+hello length 5
+hello world
+Copying w to i = 6
+Copying o to i = 7
+Copying r to i = 8
+Copying l to i = 9
+Copying d to i = 10
+****************
+hello
+****************
+Testing Array
+array elements 4
+hello world
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ ./ovmhello gcc -g -o ovmhello ovmhelllo.c
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c[A]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [13P./ovmhello 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+vt Proto_vt 0x61f0b8 parent 0x61f158 (Object_vt) size 4 tally 4
+    0 key 0x61f338 (#lookup) value 0x61f628
+    1 key 0x61f378 (#add_method) value 0x61f648
+    2 key 0x61f3c8 (#allocate) value 0x61f138
+    3 key 0x61f458 (#delegate) value 0x61f118
+obj Proto 0x61f668 vt Proto_vt 0x61f0b8
+vt Object_vt 0x61f158 parent (nil) ((nil)_vt) size 2 tally 0
+obj Object 0x61f688 vt Object_vt 0x61f158
+vt Symbol_vt 0x61f1f8 parent 0x61f158 (Object_vt) size 4 tally 3
+    0 key 0x61f488 (#new:) value 0x61fad8
+    1 key 0x61f568 (#print) value 0x61faf8
+    2 key 0x61f5a8 (#length) value 0x61f278
+obj Symbol 0x61f6a8 vt Symbol_vt 0x61f1f8
+Object Machine ready
+Testing String
+Object Machine v1.0
+hello length 5
+hello world
+Copying w to i = 6
+Copying o to i = 7
+Copying r to i = 8
+Copying l to i = 9
+Copying d to i = 10
+****************
+world
+****************
+Testing Array
+array elements 4
+hello world
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ ./ovmhello gcc -g -o ovmhello ovmhelllo.c
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c[A]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [13P./ovmhello 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+vt Proto_vt 0x7940b8 parent 0x794158 (Object_vt) size 4 tally 4
+    0 key 0x794338 (#lookup) value 0x794628
+    1 key 0x794378 (#add_method) value 0x794648
+    2 key 0x7943c8 (#allocate) value 0x794138
+    3 key 0x794458 (#delegate) value 0x794118
+obj Proto 0x794668 vt Proto_vt 0x7940b8
+vt Object_vt 0x794158 parent (nil) ((nil)_vt) size 2 tally 0
+obj Object 0x794688 vt Object_vt 0x794158
+vt Symbol_vt 0x7941f8 parent 0x794158 (Object_vt) size 4 tally 3
+    0 key 0x794488 (#new:) value 0x794ad8
+    1 key 0x794568 (#print) value 0x794af8
+    2 key 0x7945a8 (#length) value 0x794278
+obj Symbol 0x7946a8 vt Symbol_vt 0x7941f8
+Object Machine ready
+Testing String
+Object Machine v1.0
+hello length 5
+hello world
+Copying w to i = 6
+Copying o to i = 7
+Copying r to i = 8
+Copying l to i = 9
+Copying d to i = 10
+****************
+hello
+****************
+Testing Array
+array elements 4
+hello world
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ ./ovmhello gcc -g -o ovmhello ovmhelllo.c
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c[A]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [13P./ovmhello 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+vt Proto_vt 0x7840b8 parent 0x784158 (Object_vt) size 4 tally 4
+    0 key 0x784338 (#lookup) value 0x784628
+    1 key 0x784378 (#add_method) value 0x784648
+    2 key 0x7843c8 (#allocate) value 0x784138
+    3 key 0x784458 (#delegate) value 0x784118
+obj Proto 0x784668 vt Proto_vt 0x7840b8
+vt Object_vt 0x784158 parent (nil) ((nil)_vt) size 2 tally 0
+obj Object 0x784688 vt Object_vt 0x784158
+vt Symbol_vt 0x7841f8 parent 0x784158 (Object_vt) size 4 tally 3
+    0 key 0x784488 (#new:) value 0x784ad8
+    1 key 0x784568 (#print) value 0x784af8
+    2 key 0x7845a8 (#length) value 0x784278
+obj Symbol 0x7846a8 vt Symbol_vt 0x7841f8
+Object Machine ready
+Testing String
+Object Machine v1.0
+hello length 5
+hello world
+Copying w to i = 6
+Copying o to i = 7
+Copying r to i = 8
+Copying l to i = 9
+Copying d to i = 10
+##############
+hello
+##############
+Testing Array
+array elements 4
+hello world
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ ./ovmhello gcc -g -o ovmhello ovmhelllo.c
+[01m[Kovmhello.c:[m[K In function ‘[01m[KString_append[m[K’:
+[01m[Kovmhello.c:39:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct object[m[K’ has no member named ‘[01m[Kchars[m[K’
+   newString->chars[i] = self->chars[i];
+[01;32m[K            ^[m[K
+[01m[Kovmhello.c:44:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct object[m[K’ has no member named ‘[01m[Kchars[m[K’
+   newString->chars[i] = arg->chars[j];
+[01;32m[K            ^[m[K
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c
+[01m[Kovmhello.c:[m[K In function ‘[01m[KString_append[m[K’:
+[01m[Kovmhello.c:39:16:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[Kstruct object[m[K’ from type ‘[01m[Kchar[m[K’
+   newString[i] = self->chars[i];
+[01;32m[K                ^[m[K
+[01m[Kovmhello.c:44:16:[m[K [01;31m[Kerror: [m[Kincompatible types when assigning to type ‘[01m[Kstruct object[m[K’ from type ‘[01m[Kchar[m[K’
+   newString[i] = arg->chars[j];
+[01;32m[K                ^[m[K
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c[A]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [13P./ovmhello 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+vt Proto_vt 0x23ac0b8 parent 0x23ac158 (Object_vt) size 4 tally 4
+    0 key 0x23ac338 (#lookup) value 0x23ac628
+    1 key 0x23ac378 (#add_method) value 0x23ac648
+    2 key 0x23ac3c8 (#allocate) value 0x23ac138
+    3 key 0x23ac458 (#delegate) value 0x23ac118
+obj Proto 0x23ac668 vt Proto_vt 0x23ac0b8
+vt Object_vt 0x23ac158 parent (nil) ((nil)_vt) size 2 tally 0
+obj Object 0x23ac688 vt Object_vt 0x23ac158
+vt Symbol_vt 0x23ac1f8 parent 0x23ac158 (Object_vt) size 4 tally 3
+    0 key 0x23ac488 (#new:) value 0x23acad8
+    1 key 0x23ac568 (#print) value 0x23acaf8
+    2 key 0x23ac5a8 (#length) value 0x23ac278
+obj Symbol 0x23ac6a8 vt Symbol_vt 0x23ac1f8
+Object Machine ready
+Testing String
+Object Machine v1.0
+hello length 5
+hello world
+NewStringTesting Array
+array elements 4
+hello world
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ ./ovmhello gcc -g -o ovmhello ovmhelllo.c
+[01m[Kovmhello.c:[m[K In function ‘[01m[KString_append[m[K’:
+[01m[Kovmhello.c:40:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct object[m[K’ has no member named ‘[01m[Kchars[m[K’
+   newString->chars[i] = self->chars[i];
+[01;32m[K            ^[m[K
+[01m[Kovmhello.c:45:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct object[m[K’ has no member named ‘[01m[Kchars[m[K’
+   newString->chars[i] = arg->chars[j];
+[01;32m[K            ^[m[K
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c[A]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [13P./ovmhello 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+vt Proto_vt 0x18030b8 parent 0x1803158 (Object_vt) size 4 tally 4
+    0 key 0x1803338 (#lookup) value 0x1803628
+    1 key 0x1803378 (#add_method) value 0x1803648
+    2 key 0x18033c8 (#allocate) value 0x1803138
+    3 key 0x1803458 (#delegate) value 0x1803118
+obj Proto 0x1803668 vt Proto_vt 0x18030b8
+vt Object_vt 0x1803158 parent (nil) ((nil)_vt) size 2 tally 0
+obj Object 0x1803688 vt Object_vt 0x1803158
+vt Symbol_vt 0x18031f8 parent 0x1803158 (Object_vt) size 4 tally 3
+    0 key 0x1803488 (#new:) value 0x1803ad8
+    1 key 0x1803568 (#print) value 0x1803af8
+    2 key 0x18035a8 (#length) value 0x1803278
+obj Symbol 0x18036a8 vt Symbol_vt 0x18031f8
+Object Machine ready
+Testing String
+Object Machine v1.0
+hello length 5
+hello world
+****************
+hellorwor
+****************
+Testing Array
+array elements 4
+hello world
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ ./ovmhello gcc -g -o ovmhello ovmhelllo.c
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c[A]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [13P./ovmhello 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+vt Proto_vt 0x183b0b8 parent 0x183b158 (Object_vt) size 4 tally 4
+    0 key 0x183b338 (#lookup) value 0x183b628
+    1 key 0x183b378 (#add_method) value 0x183b648
+    2 key 0x183b3c8 (#allocate) value 0x183b138
+    3 key 0x183b458 (#delegate) value 0x183b118
+obj Proto 0x183b668 vt Proto_vt 0x183b0b8
+vt Object_vt 0x183b158 parent (nil) ((nil)_vt) size 2 tally 0
+obj Object 0x183b688 vt Object_vt 0x183b158
+vt Symbol_vt 0x183b1f8 parent 0x183b158 (Object_vt) size 4 tally 3
+    0 key 0x183b488 (#new:) value 0x183bad8
+    1 key 0x183b568 (#print) value 0x183baf8
+    2 key 0x183b5a8 (#length) value 0x183b278
+obj Symbol 0x183b6a8 vt Symbol_vt 0x183b1f8
+Object Machine ready
+Testing String
+Object Machine v1.0
+hello length 5
+hello world
+****************
+helloworl
+****************
+Testing Array
+array elements 4
+hello world
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ ./ovmhello gcc -g -o ovmhello ovmhelllo.c
+[01m[Kovmhello.c:34:68:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’, ‘[01m[K,[m[K’ or ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+ static struct object * String_append(struct closure * cls, HString & self, HStr
+[01;32m[K                                                                    ^[m[K
+In file included from [01m[Kovmhello.c:1:0[m[K:
+[01m[Kovmhello.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kovmhello.c:106:54:[m[K [01;31m[Kerror: [m[K‘[01m[KString_append[m[K’ undeclared (first use in this function)
+  send(String_vt, s_vtadd_method, s_append, (method_t)String_append); 
+[01;32m[K                                                      ^[m[K
+[01m[Kovm.c:203:29:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Ksend[m[K’
+       c ? c->method(c, r, ##__VA_ARGS__) : 0; \
+[01;32m[K                             ^[m[K
+[01m[Kovmhello.c:106:54:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+  send(String_vt, s_vtadd_method, s_append, (method_t)String_append); 
+[01;32m[K                                                      ^[m[K
+[01m[Kovm.c:203:29:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Ksend[m[K’
+       c ? c->method(c, r, ##__VA_ARGS__) : 0; \
+[01;32m[K                             ^[m[K
+[01m[Kovm.c:201:35:[m[K [01;31m[Kerror: [m[Kcannot convert to a pointer type
+       struct object  *r = (struct object *)(receiver); \
+[01;32m[K                                   ^[m[K
+[01m[Kovmhello.c:124:2:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[Ksend[m[K’
+  send(*newString, s_append, h, w);
+[01;32m[K  ^[m[K
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c
+In file included from [01m[Kovmhello.c:1:0[m[K:
+[01m[Kovm.c:[m[K In function ‘[01m[Kinit_ovm[m[K’:
+[01m[Kovm.c:371:61:[m[K [01;31m[Kerror: [m[K‘[01m[Ksymbol_append[m[K’ undeclared (first use in this function)
+  send(vtof(Symbol), s_vtadd_method, s_append,     (method_t)symbol_append);
+[01;32m[K                                                             ^[m[K
+[01m[Kovm.c:203:29:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Ksend[m[K’
+       c ? c->method(c, r, ##__VA_ARGS__) : 0; \
+[01;32m[K                             ^[m[K
+[01m[Kovm.c:371:61:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+  send(vtof(Symbol), s_vtadd_method, s_append,     (method_t)symbol_append);
+[01;32m[K                                                             ^[m[K
+[01m[Kovm.c:203:29:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Ksend[m[K’
+       c ? c->method(c, r, ##__VA_ARGS__) : 0; \
+[01;32m[K                             ^[m[K
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c[A]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [13P./ovmhello 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+vt Proto_vt 0x1f8b0b8 parent 0x1f8b158 (Object_vt) size 4 tally 4
+    0 key 0x1f8b338 (#lookup) value 0x1f8b628
+    1 key 0x1f8b378 (#add_method) value 0x1f8b648
+    2 key 0x1f8b3c8 (#allocate) value 0x1f8b138
+    3 key 0x1f8b458 (#delegate) value 0x1f8b118
+obj Proto 0x1f8b668 vt Proto_vt 0x1f8b0b8
+vt Object_vt 0x1f8b158 parent (nil) ((nil)_vt) size 2 tally 0
+obj Object 0x1f8b688 vt Object_vt 0x1f8b158
+vt Symbol_vt 0x1f8b1f8 parent 0x1f8b158 (Object_vt) size 4 tally 3
+    0 key 0x1f8b488 (#new:) value 0x1f8bad8
+    1 key 0x1f8b568 (#print) value 0x1f8baf8
+    2 key 0x1f8b5a8 (#length) value 0x1f8b278
+obj Symbol 0x1f8b6a8 vt Symbol_vt 0x1f8b1f8
+Object Machine ready
+Testing String
+Object Machine v1.0
+hello length 5
+hello world
+****************
+helloworl
+****************
+Testing Array
+array elements 4
+hello world
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ exit
+exit
+
+Script done on Sunday 26 March 2017 01:06:06 PM IST
+Script started on Sunday 26 March 2017 03:19:58 PM IST
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ date
+Sun Mar 26 15:20:02 IST 2017
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ dategcc -g -o ovmhello ovmhelllo.c
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c[A]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ date[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -g -o ovmhello ovmhelllo.c[A]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [9Pscript -a 2.log
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10P2.log[1Pexitcho oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo[Axit[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2.logscript -a 2.loggcc -g -o ovmhello ovmhelllo.c[A]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ date[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -g -o ovmhello ovmhelllo.c[A]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./ovmhello 
+vt Proto_vt 0x1b220b8 parent 0x1b22158 (Object_vt) size 4 tally 4
+    0 key 0x1b22338 (#lookup) value 0x1b22628
+    1 key 0x1b22378 (#add_method) value 0x1b22648
+    2 key 0x1b223c8 (#allocate) value 0x1b22138
+    3 key 0x1b22458 (#delegate) value 0x1b22118
+obj Proto 0x1b22668 vt Proto_vt 0x1b220b8
+vt Object_vt 0x1b22158 parent (nil) ((nil)_vt) size 2 tally 0
+obj Object 0x1b22688 vt Object_vt 0x1b22158
+vt Symbol_vt 0x1b221f8 parent 0x1b22158 (Object_vt) size 4 tally 3
+    0 key 0x1b22488 (#new:) value 0x1b22ad8
+    1 key 0x1b22568 (#print) value 0x1b22af8
+    2 key 0x1b225a8 (#length) value 0x1b22278
+obj Symbol 0x1b226a8 vt Symbol_vt 0x1b221f8
+Object Machine ready
+Testing String
+Object Machine v1.0
+hello length 5
+hello world
+The concatenated String is: helloworld
+Testing Array
+array elements 4
+hello world
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ [H[2J]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ exit
+exit
+
+Script done on Sunday 26 March 2017 03:28:29 PM IST
+Script started on Sunday 26 March 2017 03:35:27 PM IST
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ exit[Kdate
+Sun Mar 26 15:35:30 IST 2017
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ dateexit./ovmhello gcc -g -o ovmhello ovmhelllo.c
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c[A]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ date[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit./ovmhello 
+vt Proto_vt 0x259d0b8 parent 0x259d158 (Object_vt) size 4 tally 4
+    0 key 0x259d338 (#lookup) value 0x259d628
+    1 key 0x259d378 (#add_method) value 0x259d648
+    2 key 0x259d3c8 (#allocate) value 0x259d138
+    3 key 0x259d458 (#delegate) value 0x259d118
+obj Proto 0x259d668 vt Proto_vt 0x259d0b8
+vt Object_vt 0x259d158 parent (nil) ((nil)_vt) size 2 tally 0
+obj Object 0x259d688 vt Object_vt 0x259d158
+vt Symbol_vt 0x259d1f8 parent 0x259d158 (Object_vt) size 4 tally 3
+    0 key 0x259d488 (#new:) value 0x259dad8
+    1 key 0x259d568 (#print) value 0x259daf8
+    2 key 0x259d5a8 (#length) value 0x259d278
+obj Symbol 0x259d6a8 vt Symbol_vt 0x259d1f8
+Object Machine ready
+Testing String
+Object Machine v1.0
+hello length 5
+hello world
+The concatenated String is: hello world
+
+Testing Array
+array elements 4
+hello world
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ ./ovmhello gcc -g -o ovmhello ovmhelllo.c[A]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ date[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit
+exit
+
+Script done on Sunday 26 March 2017 03:35:39 PM IST
+Script started on Sunday 26 March 2017 03:42:03 PM IST
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ date
+Sun Mar 26 15:42:06 IST 2017
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ dateexit./ovmhello gcc -g -o ovmhello ovmhelllo.c
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ gcc -g -o ovmhello ovmhelllo.c[A]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ date[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit./ovmhello 
+vt Proto_vt 0x1bb70b8 parent 0x1bb7158 (Object_vt) size 4 tally 4
+    0 key 0x1bb7338 (#lookup) value 0x1bb7628
+    1 key 0x1bb7378 (#add_method) value 0x1bb7648
+    2 key 0x1bb73c8 (#allocate) value 0x1bb7138
+    3 key 0x1bb7458 (#delegate) value 0x1bb7118
+obj Proto 0x1bb7668 vt Proto_vt 0x1bb70b8
+vt Object_vt 0x1bb7158 parent (nil) ((nil)_vt) size 2 tally 0
+obj Object 0x1bb7688 vt Object_vt 0x1bb7158
+vt Symbol_vt 0x1bb71f8 parent 0x1bb7158 (Object_vt) size 4 tally 3
+    0 key 0x1bb7488 (#new:) value 0x1bb7ad8
+    1 key 0x1bb7568 (#print) value 0x1bb7af8
+    2 key 0x1bb75a8 (#length) value 0x1bb7278
+obj Symbol 0x1bb76a8 vt Symbol_vt 0x1bb71f8
+Object Machine ready
+Testing String
+Object Machine v1.0
+hello length 5
+hello world
+The concatenated String is: hello world
+Testing Array
+array elements 4
+hello world
+]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ ./ovmhello gcc -g -o ovmhello ovmhelllo.c[A]0;prajwal@prajwal-Inspiron-3520: ~/MySEM2/MOS/Assignment2[01;32mprajwal@prajwal-Inspiron-3520[00m:[01;34m~/MySEM2/MOS/Assignment2[00m$ date[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit
+exit
+
+Script done on Sunday 26 March 2017 03:42:18 PM IST
