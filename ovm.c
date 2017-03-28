@@ -84,6 +84,7 @@ struct root {
 	struct symbol *print;		// print contents
 	struct symbol *length;		// size of contents
 	struct symbol *append;		// string append
+	struct symbol *sizeInMemory;	// allocated size of object
 
 	struct object *proto;
 	struct object *object;
@@ -105,6 +106,8 @@ struct root {
 #define s_print		Roots.print
 //String Concatenation
 #define s_append	Roots.append
+//object sizeInMemory
+#define o_sizeInMemory	Roots.sizeInMemory
 
 #define Atom_vt		Roots.atom_vt
 #define Proto_vt	Roots.proto_vt
@@ -347,6 +350,8 @@ void init_ovm(void)
 	s_length       = atom("length");
 	//String concatenation
 	s_append       = atom("append");
+	//Object sizeInMemory
+	o_sizeInMemory = atom("sizeInMemory");
 
 	vt_add_method(0, Proto_vt, s_vtlookup,        (method_t)vt_lookup);
 	vt_add_method(0, Proto_vt, s_vtadd_method,    (method_t)vt_add_method);
@@ -367,8 +372,6 @@ void init_ovm(void)
 	send(vtof(Symbol), s_vtadd_method, s_newp,       (method_t)symbol_newp);
 	send(vtof(Symbol), s_vtadd_method, s_print,      (method_t)symbol_print);
 	send(vtof(Symbol), s_vtadd_method, s_length,     (method_t)symbol_length);
-	//String concatenation
-	//send(vtof(Symbol), s_vtadd_method, s_append,     (method_t)symbol_append);
 
 	dump_vt(Symbol_vt); dump_obj(Symbol);
 

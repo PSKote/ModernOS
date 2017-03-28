@@ -31,7 +31,7 @@ static struct object * String_print(struct closure * cls, HString self)
 }
 
 // String>>#append
-static struct object * String_append(struct closure * cls, HString self, HString arg)
+static struct object *String_append(struct closure * cls, HString self, HString arg)
 {
 	int i, j;
 	char charString[self->length + arg->length + 1];	
@@ -46,6 +46,7 @@ static struct object * String_append(struct closure * cls, HString self, HString
 	struct object *tempString = send(String, s_newp, charString);	
 	return (struct object * )tempString;
 }
+
 
 // ------------------------ Begin Array definitions
 struct array { _VTABLE_REF; int length; struct object **contents; };
@@ -89,6 +90,22 @@ static struct object *Array_atput(struct closure *cls, HArray self, int ix, stru
 static struct symbol *s_at;
 static struct symbol *s_atput;
 
+// ******* object>>#sizeInMemory ************
+static struct object *Object_sizeInMemory(struct closure * cls, struct object *self)
+{
+	int size;
+	if (vtof(self) == String_vt)
+	{
+		size = sizeof(struct vtable *) + sizeof(int) + oop2i(send(self, s_length)) + 1;
+	}
+	else if (vtof(self) == Array_vt)
+	{
+		size = sizeof(struct vtable *) + sizeof(int) + (oop2i(send(self, s_length)) * sizeof(struct object *));
+	}
+	return i2oop(size);
+}
+
+
 int main(int argc, char *argv[])
 {
 	init_ovm();
@@ -106,7 +123,9 @@ int main(int argc, char *argv[])
 	send(String_vt, s_vtadd_method, s_length, (method_t)String_length);
 	send(String_vt, s_vtadd_method, s_print,  (method_t)String_print);
 	//adding concatenation method
-	send(String_vt, s_vtadd_method, s_append, (method_t)String_append);	
+	send(String_vt, s_vtadd_method, s_append, (method_t)String_append);
+	// allocated size of object
+	send(Object_vt, s_vtadd_method, o_sizeInMemory, (method_t)Object_sizeInMemory);	
 
 	struct object *greet = send(String, s_newp, "Object Machine v1.0\n");
 	struct object *h     = send(String, s_newp, "hello");
@@ -131,6 +150,13 @@ int main(int argc, char *argv[])
 	printf("The concatenated String is: ");
 	send(newString, s_print);
 
+	//size allocated for object
+	printf("The size of h in memory is %d\n", oop2i(send(h, o_sizeInMemory)));
+	printf("The size of sp in memory is %d\n", oop2i(send(sp, o_sizeInMemory)));
+	printf("The size of w in memory is %d\n", oop2i(send(w, o_sizeInMemory)));
+	printf("The size of nl in memory is %d\n", oop2i(send(nl, o_sizeInMemory)));
+	printf("The size of appended string in memory is %d\n", oop2i(send(newString, o_sizeInMemory)));
+
 	printf("Testing Array\n");
 	Array_vt  = (typeof(Array_vt)) send(Object_vt, s_vtdelegate, "Array");
 	Array     = (typeof(Array))    send((struct object *)Array_vt,  s_vtallocate, 0);
@@ -150,5 +176,6 @@ int main(int argc, char *argv[])
 	send(line, s_atput, 3, w); send(line, s_atput, 4, nl);
 	for (int i = 1; i <= 4; i++)
 		send(send(line, s_at, i), s_print);
+	printf("The size of line in memory is %d\n", oop2i(send(line, o_sizeInMemory)));
 	return 0;
 }
